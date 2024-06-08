@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--Title for this webpage -->
+<title>FEEDBACK</title>
+<!--linking the CSS file -->
+<link rel="stylesheet" href="fdstyle.css"/> 
+<!--linking Online Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Servlet method connection -->
+<form method ="post" action="store">
+<!--feedback box -->
+<h1 class="head">Give your Feedback</h1>
+	<!--table format to get feedback -->
+	<table>
+		<tr>		
+			<td class="subhead">Your Name :</td>
+			<!--Getting Name from the Customer/User-->
+			<td class="userinput"><input type="text" name="name" placeholder="Name"></td>
+		</tr>
+		<tr>
+			<td class="subhead">Book Name :</td>
+			<!--Getting Book Name from the Customer/User-->
+			<td class="userinput"><input type="text" name="bkname" placeholder="Book name"></td>
+		</tr>
+		<tr>
+			<td class="subhead">Feedback :</td>
+			<!--Getting Feedback message from the Customer/User-->
+			<td class="userinput"><textarea class="message" name="message" placeholder="Feedback"></textarea></td>
+		</tr>		
+	</table>
+	<!--Button invoke the feedback servlet-->
+	<input type="submit" placeholder="SUBMIT">
+</form>
+
+</body>
+</html>
